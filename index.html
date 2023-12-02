@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+    <nav>
+        <h1>LOREM IPSUM</h1>
+        <ul class="navigation" >
+        <li>
+            <a href="#home" class="nav-link">Home</a>
+        </li>
+        <li>
+            <a href="#about us" class="nav-link">About Us</a>
+        </li>
+        <li>
+            <a href="#services" class="nav-link">Services</a>
+        </li>
+        <li>
+            <a href="#portfolio" class="nav-link">Porfolio</a>
+        </li>
+        <li>
+            <a href="#team" class="nav-link">Team</a>
+        </li>
+        <select id="Drop Down" name="Drop Down">
+            <option value="Drop Down 1">Drop Down 1</option>
+            <option value="Deep Drop Down">Deep Drop Down</option>
+            <option value="Drop Down 2">Drop Down 2</option>
+            <option value="DroDown 3">Drop Down 3</option>
+            <option value="Drop Down 4">Drop down 4</option>
+        </select>
+        <select id="mega menu" name="mega menu">
+            <option value="Mega Menu">Mega Menu</option>
+        </select>
+        <li>
+            <a href="#contact" class="nav-link">Contact</a>
+        </li>
+        </ul>
+    </nav>
+    </div>
+    <img src="img/cta-bg.jpg" alt="lorem ipsum">
+    <section class="about us" id="about">
+        <section class="section2">
+            <div id="grid1">
+                <div class="grid1-items">
+                    <h1 class="section2-headings section2-main-heading">Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consequat ligula felis. Maecenas at mi vitae magna tempus eleifend non cursus diam. Vestibulum eget nisi nec ligula ultrices feugiat in et purus. Aenean suscipit imperdiet erat sed pharetra. Vivamus mi ex, consequat in eros sit amet, tempus da</p>
+                </div>
+                <div id="grid2" class="grid1-items">
+                    <div class="grid2-items">
+                        <h2 class="section2-headings">Lorem ipsum dolor</h2>
+                        <p class="section2-paragraphs">amet</p>
+                    </div>
+                    <div class="grid2-items">
+                        <h2 class="section2-headings">Lorem ipsum dolor</h2>
+                        <p class="section2-paragraphs">amet</p>
+                    </div>
+                    <div class="grid2-items">
+                        <h2 class="section2-headings">Lorem ipsum dolor</h2>
+                        <p class="section2-paragraphs">amet</p>
+                    </div>
+                    <div class="grid2-items">
+                        <h2 class="section2-headings">Lorem ipsum dolor</h2>
+                        <p class="section2-paragraphs">amet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section3">
+            <h1>Services</h1>
+            <p>Fusce dignissim porta arcu,  Sed vehicula tempor pellentesque. Fusce porta ac nisi eu suscipit. In vel libero venenatis, sagittis arcu laoreet, ornare dolor. Morbi mattis sem eget urna accumsan rutrum.</p>
+            <div id="section3-cards-container">
+                <div class="section3-card">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+                <div class="section3-card">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+                <div class="section3-card">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+                <div class="section3-card">
+                    <h1>Heading</h1>
+                    <p>Paragraph</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="section4">
+            <div>
+                <h1 class="section4-heading">232</h1>
+                <p class="section4-paragraph">Happy</p>
+            </div>
+            <div>
+                <h1 class="section4-heading">232</h1>
+                <p class="section4-paragraph">Happy</p>
+            </div>
+            <div>
+                <h1 class="section4-heading">232</h1>
+                <p class="section4-paragraph">Happy</p>
+            </div>
+            <div>
+                <h1 class="section4-heading">232</h1>
+                <p class="section4-paragraph">Happy</p>
+            </div>
+        </section>
+        <section id="section5">
+            <h1>Call to Action</h1>
+            <p>Fusce dignissim porta arcu, In vel libero venenatis, sagittis arcu laoreet, ornare dolor. Morbi mattis sem eget urna accumsan rutrum.</p>
+            <button>Call to Action</button>
+        </section>
+        <section id="section6">
+            <h1>Portfolio</h1>
+            <p>Fusce dignissim porta arcu, In vel libero venenatis, sagittis arcu laoreet, ornare dolor. Morbi mattis sem eget urna accumsan rutrum.</p>
+        </section>
+        <button id="scrollToTopBtn" onclick="scrollToTop()"><i>&#8595;</i></button>
+        <button class="scroll-down-btn" onclick="scrollToNextSection()"><i>&#8595;</i></button>
+    
+        <script>
+    
+            function scrollToTop() {
+                document.documentElement.scrollTop = 0; 
+            }
+    
+            window.onscroll = function() { scrollFunction() };
+    
+            function scrollFunction() {
+                var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+                } else 
+                scrollToTopBtn.style.display = "none";
+                }
+        function scrollToNextSection() {
+            var sections = document.querySelectorAll('.sections');
+            var currentSection = null;
+    
+            sections.forEach(function (section) {
+                var rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    currentSection = section;
+                }
+            });
+    
+            var nextSection = currentSection ? currentSection.nextElementSibling : null;
+    
+            if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

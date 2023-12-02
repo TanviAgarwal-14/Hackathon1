@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+nav {
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    right: -5%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    margin-top: -20px;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+}
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.navigation li {
+    margin-right: 15px;
+}
+.navigation a,
+    .navigation select {
+    text-decoration: none;
+    color: white ;
+    padding: 8px;
+    display: inline-block;
+}
+.navigation select {
+    margin-right: 15px;
+}
+.section2 {
+    height: 75vh;
+    background-image: url('aboutbg.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    align-items: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.section2-main-heading {
+    font-size: xx-large;
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+}
+
+.section2-headings {
+    color: #28424f;
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+}
+
+.section2-paragraphs {
+    font-size: medium;
+    color: #3a3a3a;
+}
+
+#grid1 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 40% 60%;
+}
+
+.grid1-items {
+    padding: 50px;
+}
+
+#grid2 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid2-items {
+    padding: 30px;
+}
+
+#section3 {
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+    text-align: center;
+    background-color: #fefefe;
+    font-size: 25px;
+    height: 500px;
+}
+
+#section3-cards-container {
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#section4 {
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f2f6fa;
+    height: 250px;
+}
+
+.section4-heading {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+#section5{
+    background-image: url('bg.jpg'); /* Replace with your image URL */
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+    text-align: center;
+    background-color: #fefefe;
+    font-size: 25px;
+    height: 400px;
+    margin-top: 0;
+}
+#section5 h1{
+    font-size: 60px;
+    padding-top: 70px;
+}
+
+#section5 p{
+    padding-bottom: 10px;
+}
+
+#section5 button {
+border: 2px solid black;
+border-radius: 40px;
+background-color: transparent;
+color: black;
+padding: 10px 20px;
+font-size: 34px;
+transition: background-color 0.3s ease;
+}
+
+#section5 button:hover {
+background-color: #2980b9; 
+}
+
+#section6{
+    font-family: 'Poppins', sans-serif; /* Change the font family as needed */
+    text-align: center;
+    background-color: #fefefe;
+    font-size: 25px;
+    height: 400px;
+    margin-top: 0;
+}
+
+#section6 h1{
+    font-size: 60px;
+    padding-top: 70px;
+}
